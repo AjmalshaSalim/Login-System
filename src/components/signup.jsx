@@ -31,8 +31,8 @@ navigate("/login");
     };
 
     return (
-        <div className="Login flex h-screen justify-center items-center text-lime-800">
-            <div className="container bg-lime-200 w-96 h-min rounded-3xl gap-4 shadow-lg transition-transform hover:scale-105">
+        <div className="SignupScreen pt-10 h-screen justify-center items-center text-lime-800">
+            <div className="container bg-lime-200 mb-10 mx-auto w-96 h-min bg-opacity-70 rounded-3xl shadow-lg transition-transform hover:scale-105">
                 <div className="layer1 h-20 py-5 text-3xl text-lime-800">
                     <p>Sign Up</p>
                 </div>
@@ -42,7 +42,7 @@ navigate("/login");
                     </label>
                     <input
                         type="text"
-                        className="Username rounded-md text-center p-4 h-5"
+                        className="Username rounded-md text-center p-4 h-5 shadow-md font-light"
                         placeholder="Enter User Name"
                         name="Username"
                         onChange={handleInput}
@@ -54,7 +54,7 @@ navigate("/login");
                     </label>
                     <input
                         type="number"
-                        className="Username rounded-md text-center p-4 h-5"
+                        className="Username rounded-md text-center p-4 h-5 shadow-md font-light"
                         placeholder="Enter Mobile No"
                         name="Mobile"
                         onChange={handleInput}
@@ -66,7 +66,7 @@ navigate("/login");
                     </label>
                     <input
                         type="password"
-                        className="Password rounded-md text-center p-4 h-5"
+                        className="Password rounded-md text-center p-4 h-5 shadow-md font-light"
                         placeholder="Enter Password"
                         name="Password"
                         onChange={handleInput}
@@ -78,7 +78,7 @@ navigate("/login");
                     </label>
                     <input
                         type="password"
-                        className="Password rounded-md text-center p-4 h-5"
+                        className="Password rounded-md text-center p-4 h-5 shadow-md font-light"
                         placeholder="Confirm Password"
                         name="Password2"
                         onChange={handleInput}
@@ -94,8 +94,10 @@ navigate("/login");
                 </div>
             </div>
             <h2>{state.message}</h2>
-            <button className="login bg-lime-300 rounded-lg w-20 h-10 ms-20 mb-96 hover:bg-lime-500"
-     onClick={()=>navigate("/login")}>Login</button>
+            <div className="mx-auto">
+            <button className="login bg-white rounded-xl border-2 border-lime-400 w-80 h-12 hover:bg-lime-500"
+     onClick={()=>navigate("/login")}>Login</button>  
+            </div>
         </div>
     );
 }

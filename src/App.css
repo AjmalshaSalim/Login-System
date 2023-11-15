@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.LoginScreen{
+  background-image: url(./assets/pexel1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.SignupScreen{
+  background-image: url(./assets/pexel1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
